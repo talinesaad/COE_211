@@ -18,44 +18,56 @@ public class Calculator {
 	num2 = scanCalc.nextInt();
 	
 
-	if(operator == "+") {
-		System.out.println(num1 + num2);
-}	
-	if(operator =="-") {
-		System.out.println(num1 - num2);
-}
-	  if(operator == "*") {
-		System.out.println(num1 * num2);
-}
-	 if(operator == "/") {
-	System.out.println(num1 / num2);
-}
-	
-	
-	
+switch(operator){
+            case "+":
+                System.out.println(num1+operator+num2+ "=" + add(num1, num2));
+                break;
+            case "x":
+                System.out.println(num1+operator+num2+ "=" + multiply(num1, num2));
+                break;
+            case "/":
+                System.out.println(num1+operator+num2+ "=" + divide(num1,num2));
+                break;
+            case "-":
+                 System.out.println(num1+operator+num2+ "=" + subtract(num1,num2));
+                 break;
+
+        }
     }
 
     public String add(int a, int b) {
-	
-		return a + "+" + b + "=" + (a+b);
-       }
-    
+        /**
+         * Enter logic
+         */
+        int addition=a+b;
+
+        return addition+"";
+    }
 
     public String subtract(int a, int b) {
-	
-		return a + "-" + b + "=" + (a-b);
-       
+        /**
+         * Enter logic
+         */
+        int substraction= a-b;
+        return substraction+"";
     }
 
     public String multiply(int a, int b) {
-   
-		return a + "*" + b + "=" + (a*b);
-    
-}
+        /**
+         * Enter logic
+         */
+        int multiplication=a*b;
+        return multiplication+""; 
+    }
 
     public String divide(int a, int b) {
-     
-		return a + "/" + b + "=" + (a/b);
-	
+        /**
+         * Enter logic
+         */
+        int division= a/b;
+        return division+"";
+
     }
+    
 }
+	
