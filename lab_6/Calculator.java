@@ -64,9 +64,7 @@ switch(operator){
         /**
          * Enter logic
          */
-        int division= a/b;
-        return division+"";
-
+	return a+ " / " + b + " = " + ((double)a/b);
     }
     
 }
